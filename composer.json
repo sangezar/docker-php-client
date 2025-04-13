@@ -1,0 +1,52 @@
+{
+    "name": "sangezar/docker-php-client",
+    "description": "A PHP client for the Docker Engine API",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sangezar\\DockerClient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sangezar\\DockerClient\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sangezar",
+            "email": "sangezar@github.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "guzzlehttp/guzzle": "^7.0",
+        "psr/http-client": "^1.0",
+        "psr/http-factory": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "phpstan/phpstan": "^1.0",
+        "friendsofphp/php-cs-fixer": "^3.0"
+    },
+    "scripts": {
+        "test": "phpunit",
+        "phpstan": "phpstan analyse --memory-limit=256M",
+        "format": "php-cs-fixer fix --allow-risky=yes",
+        "check-style": "php-cs-fixer fix --dry-run --allow-risky=yes"
+    },
+    "scripts-descriptions": {
+        "test": "Run all tests",
+        "phpstan": "Run static analysis",
+        "format": "Fix code style issues",
+        "check-style": "Check code style issues"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "stable"
+} 

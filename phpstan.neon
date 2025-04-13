@@ -1,0 +1,11 @@
+parameters:
+    level: max
+    paths:
+        - src
+    excludePaths:
+        - tests
+        - vendor
+    tmpDir: .phpstan.cache
+    treatPhpDocTypesAsCertain: false
+    scanDirectories:
+        - src/Exception
