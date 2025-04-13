@@ -299,3 +299,4 @@ if ($client->container()->exists($containerId)) {
     $client->container()->remove($containerId);
     echo "Container {$containerId} stopped and removed\n";
 } 
+```

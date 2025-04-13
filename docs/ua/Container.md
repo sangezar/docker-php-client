@@ -299,3 +299,4 @@ if ($client->container()->exists($containerId)) {
     $client->container()->remove($containerId);
     echo "Контейнер {$containerId} зупинено та видалено\n";
 } 
+```

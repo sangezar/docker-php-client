@@ -266,3 +266,4 @@ if ($client->image()->exists($imageName)) {
     
     echo "Image {$imageName} renamed to my-nginx:v1 and original removed\n";
 } 
+```
